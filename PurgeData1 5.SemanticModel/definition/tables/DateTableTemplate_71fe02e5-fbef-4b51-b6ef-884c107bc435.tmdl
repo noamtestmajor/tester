@@ -103,7 +103,7 @@ table DateTableTemplate_71fe02e5-fbef-4b51-b6ef-884c107bc435
 
 	partition DateTableTemplate_71fe02e5-fbef-4b51-b6ef-884c107bc435 = calculated
 		mode: import
-		source = Calendar(Date(2015,1,1), Date(2015,1,1))
+		source = Calendar(Date(2015,2,1), Date(2015,2,1))
 
 	annotation __PBI_TemplateDateTable = true
 
