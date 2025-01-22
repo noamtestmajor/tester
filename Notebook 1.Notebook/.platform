@@ -1,12 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
   "metadata": {
-    "type": "Report",
-    "displayName": "PurgeData1 5",
-    "description": "noammffff"
+    "type": "Notebook",
+    "displayName": "Notebook 1",
+    "description": "New notebook"
   },
   "config": {
     "version": "2.0",
-    "logicalId": "a2a79823-75d8-8de8-4708-5bf67fbd06bf"
+    "logicalId": "d103d8ed-8763-bd46-4580-c0fbaa03d6cd"
   }
 }
