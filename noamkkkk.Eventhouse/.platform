@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Eventhouse",
+    "displayName": "noamkkkk",
+    "description": "naomaaa is funny"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "a8903312-5bbb-a199-4d17-16bc5e405715"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "KQLDatabase",
+    "displayName": "naom11",
+    "description": "naom11"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "33cf88b0-f66e-8253-43ba-3823d76f3234"
+  }
+}
