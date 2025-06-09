@@ -1,11 +1,11 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
   "metadata": {
-    "type": "Notebook",
-    "displayName": "say hello "
+    "type": "CopyJob",
+    "displayName": "copyjob1"
   },
   "config": {
     "version": "2.0",
-    "logicalId": "4d72101c-c1df-a3fc-4689-936906e07bf4"
+    "logicalId": "3cd70a76-6b0c-8c02-412b-3ad1caf190ab"
   }
 }
