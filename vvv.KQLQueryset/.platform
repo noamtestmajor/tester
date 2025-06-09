@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "KQLQueryset",
+    "displayName": "vvv",
+    "description": "vvv"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "97105500-cd51-9ef5-497a-466def943d8f"
+  }
+}
