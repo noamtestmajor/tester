@@ -1,7 +1,0 @@
-{
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/metricSet/definition/metricSet/1.0.0/schema.json",
-  "metricSetFileFormat": {
-    "metrics": [],
-    "contact": "7d728913-df52-436a-9c81-8558e20cac27"
-  }
-}
