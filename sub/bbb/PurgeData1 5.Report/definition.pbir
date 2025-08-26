@@ -3,7 +3,7 @@
   "version": "4.0",
   "datasetReference": {
     "byPath": {
-      "path": "../PurgeData1 5.SemanticModel"
+      "path": "../../../PurgeData1 5.SemanticModel"
     }
   }
 }
