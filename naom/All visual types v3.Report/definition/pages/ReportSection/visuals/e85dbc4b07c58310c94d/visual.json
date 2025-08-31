@@ -9,10 +9,10 @@
     "width": 416
   },
   "visual": {
-    "visualType": "donutChart",
+    "visualType": "tableEx",
     "query": {
       "queryState": {
-        "Category": {
+        "Values": {
           "projections": [
             {
               "field": {
@@ -25,13 +25,8 @@
                   "Property": "EnglishOccupation"
                 }
               },
-              "queryRef": "DimCustomer.EnglishOccupation",
-              "active": true
-            }
-          ]
-        },
-        "Y": {
-          "projections": [
+              "queryRef": "DimCustomer.EnglishOccupation"
+            },
             {
               "field": {
                 "Aggregation": {
