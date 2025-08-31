@@ -1,0 +1,33 @@
+table family
+	lineageTag: 3b3cfdb5-2d6b-4bfc-a51f-ab0161159df3
+
+	column Id
+		dataType: int64
+		formatString: 0
+		lineageTag: 8fb3a9b3-131e-4b2f-ae42-29a38d3e0675
+		summarizeBy: count
+		sourceColumn: Id
+
+		annotation SummarizationSetBy = Automatic
+
+	column Name
+		dataType: string
+		lineageTag: c298f9f8-703a-45b0-b0d5-88f50f338c81
+		summarizeBy: none
+		sourceColumn: Name
+
+		annotation SummarizationSetBy = Automatic
+
+	partition family-d2f3c09f-1064-44f6-8ec2-9f42664ba8ea = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("pbiotestdb.database.windows.net", "irTestB"),
+				    dbo_family = Source{[Schema="dbo",Item="family"]}[Data]
+				in
+				    dbo_family
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+
