@@ -9,10 +9,10 @@
     "width": 472
   },
   "visual": {
-    "visualType": "tableEx",
+    "visualType": "pivotTable",
     "query": {
       "queryState": {
-        "Values": {
+        "Rows": {
           "projections": [
             {
               "field": {
@@ -25,8 +25,13 @@
                   "Property": "EnglishCountryRegionName"
                 }
               },
-              "queryRef": "DimGeography.EnglishCountryRegionName"
-            },
+              "queryRef": "DimGeography.EnglishCountryRegionName",
+              "active": true
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
             {
               "field": {
                 "Aggregation": {
