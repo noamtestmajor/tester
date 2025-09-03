@@ -1,0 +1,179 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
+  "name": "58b12e460bbd048e1952",
+  "position": {
+    "x": 427.01812191103789,
+    "y": 473.27841845140034,
+    "z": 3000,
+    "height": 246.72158154859966,
+    "width": 852.85008237232285
+  },
+  "visual": {
+    "visualType": "PBI_CV_73744D90_4DC9_4F18_8BA5_EE8FA5C98035",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimCustomer"
+                    }
+                  },
+                  "Property": "EnglishEducation"
+                }
+              },
+              "queryRef": "DimCustomer.EnglishEducation"
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "FactInternetSales"
+                        }
+                      },
+                      "Property": "SalesAmount"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(FactInternetSales.SalesAmount)"
+            }
+          ]
+        },
+        "Legend": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimCustomer"
+                    }
+                  },
+                  "Property": "Gender"
+                }
+              },
+              "queryRef": "DimCustomer.Gender"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "FactInternetSales"
+                      }
+                    },
+                    "Property": "SalesAmount"
+                  }
+                },
+                "Function": 0
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "Chart": [
+        {
+          "properties": {
+            "seriesColors": {
+              "expr": {
+                "Literal": {
+                  "Value": "'{\"F\":\"#118DFF\",\"M\":\"#12239E\"}'"
+                }
+              }
+            },
+            "markDict": {
+              "expr": {
+                "Literal": {
+                  "Value": "'{\"Fact\":{\"elements\":[{\"name\":\"text1\",\"primative\":{\"text\":\"Text\",\"foreground\":\"#000\",\"type\":6,\"sizingMode\":0,\"fontSize\":36,\"fontStyle\":\"Normal\",\"fontFamily\":\"Segoe UI\",\"fontWeight\":\"Normal\",\"horizontalAlign\":2,\"verticalAlign\":2},\"displayMode\":0,\"horizontalAlignment\":0,\"verticalAlignment\":0,\"width\":{\"unit\":1,\"value\":100},\"height\":{\"unit\":1,\"value\":100},\"margin\":{\"left\":{\"unit\":1,\"value\":0},\"right\":{\"unit\":1,\"value\":0},\"top\":{\"unit\":1,\"value\":0},\"bottom\":{\"unit\":1,\"value\":0}},\"positionBound\":0,\"emptyFill\":\"#CCCCCC\",\"valueFill\":\"#01B8AA\",\"strokeWidth\":0,\"itemCountByType\":0,\"breadthItemCount\":1,\"useValueFill\":false}],\"bindings\":[{\"dataPropertyName\":\"[%AUTO%]\",\"targetName\":\"text1.primitive\",\"targetPropertyName\":\"text\",\"converterSettings\":{\"dataPropertyName\":\"[%AUTO%]\"}}]},\"Column\":{\"elements\":[{\"name\":\"shape2\",\"positionBound\":0,\"horizontalAlignment\":0,\"verticalAlignment\":0,\"margin\":{\"left\":{\"unit\":1,\"value\":0},\"right\":{\"unit\":1,\"value\":0},\"top\":{\"unit\":1,\"value\":0},\"bottom\":{\"unit\":1,\"value\":0}},\"width\":{\"unit\":1,\"value\":100},\"height\":{\"unit\":1,\"value\":100},\"displayMode\":0,\"dataValue\":0.68,\"ignoreEmptyFill\":true,\"emptyFill\":\"#CCCCCC\",\"valueFill\":\"#01B8AA\",\"stroke\":\"undefined\",\"strokeWidth\":0,\"itemCountByType\":0,\"breadthItemCount2\":1,\"depthItemCount2\":1,\"breadthItemCount\":1,\"direction\":1,\"keepRatio\":false,\"compactItems\":false,\"showPartialItem\":true,\"hasDirection\":true,\"enableValueTint\":true,\"enableEmptyTint\":false,\"enableItemBackground\":false,\"itemBackground\":\"gray\",\"enableItemBackgroundRoundCorner\":false,\"primative\":{\"type\":4,\"data\":{\"mediaType\":1,\"data\":\"M12.488,12.5h103.331L12.486,115.833L12.488,12.5z\",\"contentBound\":{\"x\":12.486000061035156,\"y\":12.5,\"width\":103.33300018310547,\"height\":103.33300018310547}}},\"enableTextClip\":false,\"useValueFill\":false},{\"name\":\"shape3\",\"positionBound\":0,\"horizontalAlignment\":0,\"verticalAlignment\":0,\"margin\":{\"left\":{\"unit\":1,\"value\":0},\"right\":{\"unit\":1,\"value\":0},\"top\":{\"unit\":1,\"value\":0},\"bottom\":{\"unit\":1,\"value\":0}},\"width\":{\"unit\":1,\"value\":100},\"height\":{\"unit\":1,\"value\":100},\"displayMode\":0,\"dataValue\":0.68,\"ignoreEmptyFill\":true,\"emptyFill\":\"#CCCCCC\",\"valueFill\":\"#01B8AA\",\"stroke\":\"undefined\",\"strokeWidth\":0,\"itemCountByType\":0,\"breadthItemCount2\":1,\"depthItemCount2\":1,\"breadthItemCount\":1,\"direction\":1,\"keepRatio\":false,\"compactItems\":false,\"showPartialItem\":true,\"hasDirection\":true,\"enableValueTint\":true,\"enableEmptyTint\":false,\"enableItemBackground\":false,\"itemBackground\":\"gray\",\"enableItemBackgroundRoundCorner\":false,\"primative\":{\"type\":4,\"data\":{\"mediaType\":1,\"data\":\"M93.978,63.946c0,0.533-0.43,0.963-0.963,0.963H67.579V66.8c0,0.763-0.618,1.382-1.381,1.382  c-0.761,0-1.379-0.619-1.379-1.382v-1.891h-2.504c-0.533,0-0.964-0.43-0.964-0.963c0-0.532,0.431-0.962,0.964-0.962h2.504V41.828  c0-0.761,0.618-1.38,1.379-1.38c0.763,0,1.381,0.619,1.381,1.38v21.156h25.436C93.548,62.984,93.978,63.414,93.978,63.946z   M121.394,64.001c0,30.523-24.745,55.271-55.271,55.271c-30.525,0-55.272-24.748-55.272-55.271  c0-30.527,24.747-55.272,55.272-55.272C96.648,8.729,121.394,33.474,121.394,64.001z M115.284,64.001  c0-27.153-22.012-49.164-49.162-49.164c-27.153,0-49.164,22.011-49.164,49.164c0,27.151,22.011,49.163,49.164,49.163  C93.272,113.164,115.284,91.152,115.284,64.001z M22.072,64.001c0,1.827,1.483,3.311,3.31,3.311c1.829,0,3.312-1.483,3.312-3.311  c0-1.83-1.483-3.312-3.312-3.312C23.555,60.689,22.072,62.171,22.072,64.001z M103.786,64.001c0,1.827,1.482,3.311,3.311,3.311  c1.827,0,3.311-1.483,3.311-3.311c0-1.83-1.483-3.312-3.311-3.312C105.269,60.689,103.786,62.171,103.786,64.001z M66.122,108.701  c1.827,0,3.311-1.483,3.311-3.31c0-1.829-1.483-3.312-3.311-3.312c-1.83,0-3.312,1.482-3.312,3.312  C62.811,107.218,64.292,108.701,66.122,108.701z M66.122,26.987c1.827,0,3.311-1.483,3.311-3.31c0-1.828-1.483-3.311-3.311-3.311  c-1.83,0-3.312,1.483-3.312,3.311C62.811,25.504,64.292,26.987,66.122,26.987z\",\"contentBound\":{\"x\":10.850997924804688,\"y\":8.72900390625,\"width\":110.54299926757812,\"height\":110.54299926757812}}},\"enableTextClip\":false,\"useValueFill\":false},{\"name\":\"shape4\",\"positionBound\":0,\"horizontalAlignment\":0,\"verticalAlignment\":0,\"margin\":{\"left\":{\"unit\":1,\"value\":0},\"right\":{\"unit\":1,\"value\":0},\"top\":{\"unit\":1,\"value\":0},\"bottom\":{\"unit\":1,\"value\":0}},\"width\":{\"unit\":1,\"value\":100},\"height\":{\"unit\":1,\"value\":100},\"displayMode\":0,\"dataValue\":0.68,\"ignoreEmptyFill\":true,\"emptyFill\":\"#CCCCCC\",\"valueFill\":\"#01B8AA\",\"stroke\":\"undefined\",\"strokeWidth\":0,\"itemCountByType\":0,\"breadthItemCount2\":1,\"depthItemCount2\":1,\"breadthItemCount\":1,\"direction\":1,\"keepRatio\":false,\"compactItems\":false,\"showPartialItem\":true,\"hasDirection\":true,\"enableValueTint\":true,\"enableEmptyTint\":false,\"enableItemBackground\":false,\"itemBackground\":\"gray\",\"enableItemBackgroundRoundCorner\":false,\"primative\":{\"type\":4,\"data\":{\"mediaType\":1,\"data\":\"M87.064,85.226c0.146,5.384,0.087,11.26-2.693,16.063c-4.501,7.76-12.219,7.077-19.396,8.774  c-4.766,1.125-9.579,1.494-14.438,1.612c-6.345,0.154-29.703,3.882-29.702-8.217c0-1.886,0.748-4.693,2.007-6.119  c-2.392-1.601-3.915-4.015-3.915-6.718c0-2.561,1.376-4.857,3.557-6.454c-2.729-1.584-4.511-4.16-4.511-7.078  c0-3.064,1.961-5.754,4.922-7.312c0.199-0.176,0.358-0.327,0.452-0.437c-3.211-1.514-5.374-4.315-5.374-7.532  c0-10.176,15.06-11.225,21.188-11.065c1.131,0.029,9.254-0.926,9.368-0.658c-2.604-6.12-1.759-12.324-2.04-18.959  c-0.146-3.451,1.286-5.844,2.312-9.102c1.029-3.271,8.562-10.347,12.793-7.611c4.983,3.221-0.089,7.768,0.67,13.725  c0.885,6.934,1.949,11.699,5.742,17.588c2.357,3.659,4.776,6.853,7.958,9.669c4.4,3.895,8.756,6.006,9.956,12.638  c0.032,0.182,0.063,0.365,0.092,0.547C86.885,74.072,86.914,79.688,87.064,85.226z M110.667,63.667c0-2.762-2.238-5-5-5h-8.666  c-2.762,0-5,2.238-5,5V103c0,2.762,2.238,5,5,5h8.666c2.762,0,5-2.238,5-5V63.667z\",\"contentBound\":{\"x\":17.973003387451172,\"y\":13.797202110290527,\"width\":92.69400024414062,\"height\":98.5379638671875}}},\"enableTextClip\":false,\"useValueFill\":false}],\"bindings\":[]},\"Bar\":{\"elements\":[{\"name\":\"shape2\",\"positionBound\":0,\"horizontalAlignment\":0,\"verticalAlignment\":0,\"margin\":{\"left\":{\"unit\":1,\"value\":0},\"right\":{\"unit\":1,\"value\":0},\"top\":{\"unit\":1,\"value\":0},\"bottom\":{\"unit\":1,\"value\":0}},\"width\":{\"unit\":1,\"value\":100},\"height\":{\"unit\":1,\"value\":100},\"displayMode\":0,\"dataValue\":0.68,\"ignoreEmptyFill\":true,\"emptyFill\":\"#CCCCCC\",\"valueFill\":\"#01B8AA\",\"stroke\":\"undefined\",\"strokeWidth\":0,\"itemCountByType\":0,\"breadthItemCount2\":1,\"depthItemCount2\":1,\"breadthItemCount\":1,\"direction\":2,\"keepRatio\":false,\"compactItems\":false,\"showPartialItem\":true,\"hasDirection\":true,\"enableValueTint\":true,\"enableEmptyTint\":false,\"enableItemBackground\":false,\"itemBackground\":\"gray\",\"enableItemBackgroundRoundCorner\":false,\"primative\":{\"type\":4,\"data\":{\"mediaType\":1,\"data\":\"M12.488,12.5h103.331L12.486,115.833L12.488,12.5z\",\"contentBound\":{\"x\":12.486000061035156,\"y\":12.5,\"width\":103.33300018310547,\"height\":103.33300018310547}}},\"enableTextClip\":false,\"useValueFill\":false},{\"name\":\"shape3\",\"positionBound\":0,\"horizontalAlignment\":0,\"verticalAlignment\":0,\"margin\":{\"left\":{\"unit\":1,\"value\":0},\"right\":{\"unit\":1,\"value\":0},\"top\":{\"unit\":1,\"value\":0},\"bottom\":{\"unit\":1,\"value\":0}},\"width\":{\"unit\":1,\"value\":100},\"height\":{\"unit\":1,\"value\":100},\"displayMode\":0,\"dataValue\":0.68,\"ignoreEmptyFill\":true,\"emptyFill\":\"#CCCCCC\",\"valueFill\":\"#01B8AA\",\"stroke\":\"undefined\",\"strokeWidth\":0,\"itemCountByType\":0,\"breadthItemCount2\":1,\"depthItemCount2\":1,\"breadthItemCount\":1,\"direction\":2,\"keepRatio\":false,\"compactItems\":false,\"showPartialItem\":true,\"hasDirection\":true,\"enableValueTint\":true,\"enableEmptyTint\":false,\"enableItemBackground\":false,\"itemBackground\":\"gray\",\"enableItemBackgroundRoundCorner\":false,\"primative\":{\"type\":4,\"data\":{\"mediaType\":1,\"data\":\"M93.978,63.946c0,0.533-0.43,0.963-0.963,0.963H67.579V66.8c0,0.763-0.618,1.382-1.381,1.382  c-0.761,0-1.379-0.619-1.379-1.382v-1.891h-2.504c-0.533,0-0.964-0.43-0.964-0.963c0-0.532,0.431-0.962,0.964-0.962h2.504V41.828  c0-0.761,0.618-1.38,1.379-1.38c0.763,0,1.381,0.619,1.381,1.38v21.156h25.436C93.548,62.984,93.978,63.414,93.978,63.946z   M121.394,64.001c0,30.523-24.745,55.271-55.271,55.271c-30.525,0-55.272-24.748-55.272-55.271  c0-30.527,24.747-55.272,55.272-55.272C96.648,8.729,121.394,33.474,121.394,64.001z M115.284,64.001  c0-27.153-22.012-49.164-49.162-49.164c-27.153,0-49.164,22.011-49.164,49.164c0,27.151,22.011,49.163,49.164,49.163  C93.272,113.164,115.284,91.152,115.284,64.001z M22.072,64.001c0,1.827,1.483,3.311,3.31,3.311c1.829,0,3.312-1.483,3.312-3.311  c0-1.83-1.483-3.312-3.312-3.312C23.555,60.689,22.072,62.171,22.072,64.001z M103.786,64.001c0,1.827,1.482,3.311,3.311,3.311  c1.827,0,3.311-1.483,3.311-3.311c0-1.83-1.483-3.312-3.311-3.312C105.269,60.689,103.786,62.171,103.786,64.001z M66.122,108.701  c1.827,0,3.311-1.483,3.311-3.31c0-1.829-1.483-3.312-3.311-3.312c-1.83,0-3.312,1.482-3.312,3.312  C62.811,107.218,64.292,108.701,66.122,108.701z M66.122,26.987c1.827,0,3.311-1.483,3.311-3.31c0-1.828-1.483-3.311-3.311-3.311  c-1.83,0-3.312,1.483-3.312,3.311C62.811,25.504,64.292,26.987,66.122,26.987z\",\"contentBound\":{\"x\":10.850997924804688,\"y\":8.72900390625,\"width\":110.54299926757812,\"height\":110.54299926757812}}},\"enableTextClip\":false,\"useValueFill\":false},{\"name\":\"shape4\",\"positionBound\":0,\"horizontalAlignment\":0,\"verticalAlignment\":0,\"margin\":{\"left\":{\"unit\":1,\"value\":0},\"right\":{\"unit\":1,\"value\":0},\"top\":{\"unit\":1,\"value\":0},\"bottom\":{\"unit\":1,\"value\":0}},\"width\":{\"unit\":1,\"value\":100},\"height\":{\"unit\":1,\"value\":100},\"displayMode\":0,\"dataValue\":0.68,\"ignoreEmptyFill\":true,\"emptyFill\":\"#CCCCCC\",\"valueFill\":\"#01B8AA\",\"stroke\":\"undefined\",\"strokeWidth\":0,\"itemCountByType\":0,\"breadthItemCount2\":1,\"depthItemCount2\":1,\"breadthItemCount\":1,\"direction\":2,\"keepRatio\":false,\"compactItems\":false,\"showPartialItem\":true,\"hasDirection\":true,\"enableValueTint\":true,\"enableEmptyTint\":false,\"enableItemBackground\":false,\"itemBackground\":\"gray\",\"enableItemBackgroundRoundCorner\":false,\"primative\":{\"type\":4,\"data\":{\"mediaType\":1,\"data\":\"M87.064,85.226c0.146,5.384,0.087,11.26-2.693,16.063c-4.501,7.76-12.219,7.077-19.396,8.774  c-4.766,1.125-9.579,1.494-14.438,1.612c-6.345,0.154-29.703,3.882-29.702-8.217c0-1.886,0.748-4.693,2.007-6.119  c-2.392-1.601-3.915-4.015-3.915-6.718c0-2.561,1.376-4.857,3.557-6.454c-2.729-1.584-4.511-4.16-4.511-7.078  c0-3.064,1.961-5.754,4.922-7.312c0.199-0.176,0.358-0.327,0.452-0.437c-3.211-1.514-5.374-4.315-5.374-7.532  c0-10.176,15.06-11.225,21.188-11.065c1.131,0.029,9.254-0.926,9.368-0.658c-2.604-6.12-1.759-12.324-2.04-18.959  c-0.146-3.451,1.286-5.844,2.312-9.102c1.029-3.271,8.562-10.347,12.793-7.611c4.983,3.221-0.089,7.768,0.67,13.725  c0.885,6.934,1.949,11.699,5.742,17.588c2.357,3.659,4.776,6.853,7.958,9.669c4.4,3.895,8.756,6.006,9.956,12.638  c0.032,0.182,0.063,0.365,0.092,0.547C86.885,74.072,86.914,79.688,87.064,85.226z M110.667,63.667c0-2.762-2.238-5-5-5h-8.666  c-2.762,0-5,2.238-5,5V103c0,2.762,2.238,5,5,5h8.666c2.762,0,5-2.238,5-5V63.667z\",\"contentBound\":{\"x\":17.973003387451172,\"y\":13.797202110290527,\"width\":92.69400024414062,\"height\":98.5379638671875}}},\"enableTextClip\":false,\"useValueFill\":false}],\"bindings\":[]},\"Line\":{\"elements\":[{\"name\":\"shape01\",\"primative\":{\"type\":4,\"data\":{\"mediaType\":1,\"data\":\"M10,5c0,2.761-2.239,5-5,5S0,7.761,0,5s2.239-5,5-5S10,2.239,10,5z\"}},\"displayMode\":0,\"horizontalAlignment\":0,\"verticalAlignment\":0,\"width\":{\"unit\":1,\"value\":100},\"height\":{\"unit\":1,\"value\":100},\"margin\":{\"left\":{\"unit\":1,\"value\":0},\"right\":{\"unit\":1,\"value\":0},\"top\":{\"unit\":1,\"value\":0},\"bottom\":{\"unit\":1,\"value\":0}},\"positionBound\":0,\"emptyFill\":\"#CCCCCC\",\"valueFill\":\"#01B8AA\",\"strokeWidth\":0,\"itemCountByType\":0,\"breadthItemCount\":1,\"useValueFill\":false}],\"bindings\":[]}}'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "meta": [
+        {
+          "properties": {
+            "schemaVersion": {
+              "expr": {
+                "Literal": {
+                  "Value": "'1'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'CV From a file'"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "background": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "'18'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
