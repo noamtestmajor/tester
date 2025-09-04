@@ -1,0 +1,9 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definitionProperties/2.0.0/schema.json",
+  "version": "4.0",
+  "datasetReference": {
+    "byConnection": {
+      "connectionString": "Data Source=\"powerbi://dailyapi.powerbi.com/v1.0/myorg/Admin monitoring\";initial catalog=\"Purview Hub\";integrated security=ClaimsToken;semanticmodelid=7468dd4e-f38c-4e46-b2ed-382af0ccf04a"
+    }
+  }
+}
