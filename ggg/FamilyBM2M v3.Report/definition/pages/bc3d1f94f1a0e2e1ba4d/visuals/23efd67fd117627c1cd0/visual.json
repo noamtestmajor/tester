@@ -1,6 +1,6 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
-  "name": "e916bb4b21b312d9c4fc",
+  "name": "23efd67fd117627c1cd0",
   "position": {
     "x": 10,
     "y": 0,
@@ -9,7 +9,7 @@
     "width": 280
   },
   "visual": {
-    "visualType": "columnChart",
+    "visualType": "hundredPercentStackedBarChart",
     "drillFilterOtherVisuals": true
   }
 }
