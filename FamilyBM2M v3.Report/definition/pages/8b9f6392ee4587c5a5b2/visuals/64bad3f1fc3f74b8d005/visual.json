@@ -1,6 +1,6 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
-  "name": "d8c6d4b27bdab9f74081",
+  "name": "64bad3f1fc3f74b8d005",
   "position": {
     "x": 10,
     "y": 0,
@@ -9,7 +9,7 @@
     "width": 280
   },
   "visual": {
-    "visualType": "tableEx",
+    "visualType": "areaChart",
     "drillFilterOtherVisuals": true
   }
 }
