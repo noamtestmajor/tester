@@ -3,7 +3,7 @@
   "version": "4.0",
   "datasetReference": {
     "byPath": {
-      "path": "../FamilyBM2M v3.SemanticModel"
+      "path": "../ggg/FamilyBM2M v3.SemanticModel"
     }
   }
 }
