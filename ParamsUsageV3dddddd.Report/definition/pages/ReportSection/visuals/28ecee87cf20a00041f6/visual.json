@@ -1,0 +1,115 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "28ecee87cf20a00041f6",
+  "position": {
+    "x": 215.88138385502472,
+    "y": 347.54530477759471,
+    "z": 4000,
+    "height": 345.17298187808893,
+    "width": 901.48270181219107
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "ServerName:  \"pbiotestdb.database.windows.net\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "MaxId: 10000 meta [IsParameterQuery=true, Type=\"Number\", IsParameterQueryRequired=true]"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "BinParam: \"ggt%423$$57%dfdfcdfhdh\" meta [IsParameterQuery=true, Type=\"Binary\", IsParameterQueryRequired=true]"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "AnyParam: \"uu63\" meta [IsParameterQuery=true, Type=\"Any\", IsParameterQueryRequired=true]"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "DateParam: #datetime(2002, 2, 8, 0, 0, 0) meta [IsParameterQuery=true, List={#datetime(2000, 1, 1, 0, 0, 0), #datetime(2002, 2, 8, 0, 0, 0), #datetime(2003, 12, 8, 0, 0, 0), #datetime(2007, 7, 9, 0, 0, 0)}, DefaultValue=#datetime(2000, 1, 1, 0, 0, 0), Type=\"DateTime\", IsParameterQueryRequired=true]"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "StrParam:  \"Hello\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=false]"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "BoolParam: true meta [IsParameterQuery=true, List={true, false}, DefaultValue=true, Type=\"Logical\", IsParameterQueryRequired=true]"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

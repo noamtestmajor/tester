@@ -1,0 +1,35 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "c6fa03c61b1d96809ca9",
+  "position": {
+    "x": 9.4892915980230637,
+    "y": 320.26359143327841,
+    "z": 1000,
+    "height": 279.9341021416804,
+    "width": 153.01482701812191
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "RefreshConnections_temp3"
+                    }
+                  },
+                  "Property": "MeasureWithParam"
+                }
+              },
+              "queryRef": "RefreshConnections_temp3.MeasureWithParam"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
