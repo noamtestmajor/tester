@@ -5,7 +5,7 @@
       "*": {
         "*": [
           {
-            "wordWrap": false
+            "wordWrap": true
           }
         ],
         "wordWrap": [
