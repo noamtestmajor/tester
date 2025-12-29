@@ -1,15 +1,15 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "93164c920e56d56a23df",
+  "name": "0d48c21fb11a54bc301a",
   "position": {
     "x": 10,
-    "y": 20,
-    "z": 0,
+    "y": 320,
+    "z": 1,
     "height": 280,
     "width": 280,
-    "tabOrder": 0
+    "tabOrder": 1
   },
   "visual": {
-    "visualType": "hundredPercentStackedAreaChart"
+    "visualType": "pivotTable"
   }
 }
