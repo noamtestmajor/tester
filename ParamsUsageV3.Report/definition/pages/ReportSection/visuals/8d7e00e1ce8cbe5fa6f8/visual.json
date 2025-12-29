@@ -9,10 +9,10 @@
     "width": 280
   },
   "visual": {
-    "visualType": "card",
+    "visualType": "clusteredBarChart",
     "query": {
       "queryState": {
-        "Values": {
+        "Tooltips": {
           "projections": [
             {
               "field": {
@@ -36,5 +36,28 @@
         }
       }
     }
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "27affe86fd81d5aeaecd",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "DateTimeZoneParam"
+                  }
+                },
+                "Property": "DateTimeZoneParam"
+              }
+            },
+            "Function": 3
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }
