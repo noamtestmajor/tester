@@ -1,11 +1,11 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
   "metadata": {
-    "type": "Report",
-    "displayName": "FamilyBM2ddddddM v3"
+    "type": "CopyJob",
+    "displayName": "nwnnff"
   },
   "config": {
     "version": "2.0",
-    "logicalId": "b318c177-dfa4-a655-4495-5571777f11b6"
+    "logicalId": "28d38f29-d710-b577-4caa-9e2e54aeded4"
   }
 }
