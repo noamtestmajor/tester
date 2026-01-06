@@ -2,14 +2,14 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "0d48c21fb11a54bc301a",
   "position": {
-    "x": 10,
-    "y": 320,
+    "x": 614.010152284264,
+    "y": 276.14213197969542,
     "z": 1,
-    "height": 280,
-    "width": 280,
+    "height": 279.39086294416245,
+    "width": 279.39086294416245,
     "tabOrder": 1
   },
   "visual": {
-    "visualType": "pivotTable"
+    "visualType": "waterfallChart"
   }
 }
