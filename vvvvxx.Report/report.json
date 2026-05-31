@@ -1,5 +1,5 @@
 {
-  "config": "{\"version\":\"3.14\",\"activeSectionIndex\":0,\"linguisticSchemaSyncVersion\":0,\"baseTheme\":\"CY17SU10\"}",
+  "config": "{\"version\":\"5.66\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY17SU10\",\"type\":2,\"version\":{\"visual\":\"1.8.26\",\"report\":\"2.0.26\",\"page\":\"1.3.26\"}}},\"activeSectionIndex\":0,\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useEnhancedTooltips\":true,\"defaultDataExplorePerspective\":\"\"}}",
   "layoutOptimization": 0,
   "resourcePackages": [
     {
@@ -49,7 +49,7 @@
           "z": 4000.00
         },
         {
-          "config": "{\"name\":\"8d7e00e1ce8cbe5fa6f8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":300,\"y\":20,\"width\":280,\"height\":280,\"z\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(DateTimeZoneParam.DateTimeZoneParam)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DateTimeZoneParam\"}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"DateTimeZoneParam\"}},\"Function\":3},\"Name\":\"Min(DateTimeZoneParam.DateTimeZoneParam)\"}]}}}",
+          "config": "{\"name\":\"8d7e00e1ce8cbe5fa6f8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":300,\"y\":20,\"width\":280,\"height\":280,\"z\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(DateTimeZoneParam.DateTimeZoneParam)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DateTimeZoneParam\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"DateTimeZoneParam\"}},\"Function\":3},\"Name\":\"Min(DateTimeZoneParam.DateTimeZoneParam)\"}]}}}",
           "filters": "[]",
           "height": 280.00,
           "queryBinary": "H4sIAAAAAAAEAHVQy07DMBD8lz2BZCFob7lBaTmBQlP1AMrBcrbBVf3QxpZAkf+dtRMeUuHknfHuzOyOsHLGSNsNUL2O0CDXQavniPRxL4Ns3qTHuQWqEcpHLvZIg3YWqoWADTlTxp+kQaigAwFrlgncCayCO23wxVmsJUkDqRVsdEIVytBt3xP2MhS1EdbvnnAYZrRyp2j+4BsXSeEWDz+gGKckoCbnkf4z54ZNtGqyWzKaQz9qe3HWfnXGXHJ8HrrTttO2z+41aSOnozyQi57p6Zic44jFKOPrtgzmo26xi+pr30zs85YcYil+q+2c5yflxN/XvmHYpk/hZpSgtgEAAA==",
@@ -59,7 +59,7 @@
           "z": 2000.00
         },
         {
-          "config": "{\"name\":\"9b559d65c933f9bc0700\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":20,\"width\":280,\"height\":280,\"z\":0}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Table1.asasasas\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Table1.asasasas)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table1NoParams\"}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"asasasas\"},\"Name\":\"Table1.asasasas\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"asasasas\"}},\"Function\":5},\"Name\":\"CountNonNull(Table1.asasasas)\"}]}}}",
+          "config": "{\"name\":\"9b559d65c933f9bc0700\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":20,\"width\":280,\"height\":280,\"z\":0}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Table1.asasasas\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Table1.asasasas)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table1NoParams\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"asasasas\"},\"Name\":\"Table1.asasasas\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"asasasas\"}},\"Function\":5},\"Name\":\"CountNonNull(Table1.asasasas)\"}]}}}",
           "filters": "[]",
           "height": 280.00,
           "queryBinary": "H4sIAAAAAAAEALWSwU7DMAyG38UnkCLUIrj0xrqNWykbGge0Q2hNKWqSyk0EU9V3x0kKG5xBuSR2/P9fHI+QG6WkrgfInkbYIu9tW907pMNSWrl9lT3OVyAbIST8Zoc0tEZDdilgTUaF8kIqhAwsCFixjOWb8CCfO0wLU0qSaoBpL9ilw8qGitx0TmkvuProCYeoySDGUYUbfDkegvA0CSjJ9EhBXA5xAYdn8+h3cZIZ4aZpCBtpZ/GfVn+GwPG101V0uT4S5cZpWxhduK47+4V3HhpyRzXS4hA6smwJZ41U/BvqtOfUotV1qxtfVFKrZPzZWzKu53CcCC5/izz+nIh0H0r9bGywdtVXT31g5/HY+Uqc6j2yi3mP+NwIflaSJJNH+56hNAB9Akc1/EWMAgAA",
@@ -78,7 +78,7 @@
           "z": 3000.00
         },
         {
-          "config": "{\"name\":\"c6fa03c61b1d96809ca9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.489291598023064,\"y\":320.2635914332784,\"z\":1000,\"width\":153.0148270181219,\"height\":279.9341021416804}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"RefreshConnections_temp3.MeasureWithParam\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"RefreshConnections_temp3\"}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"MeasureWithParam\"},\"Name\":\"RefreshConnections_temp3.MeasureWithParam\"}]}}}",
+          "config": "{\"name\":\"c6fa03c61b1d96809ca9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.489291598023064,\"y\":320.2635914332784,\"z\":1000,\"width\":153.0148270181219,\"height\":279.9341021416804}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"RefreshConnections_temp3.MeasureWithParam\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"RefreshConnections_temp3\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"MeasureWithParam\"},\"Name\":\"RefreshConnections_temp3.MeasureWithParam\"}]}}}",
           "filters": "[]",
           "height": 279.93,
           "width": 153.01,

@@ -1,12 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.1.0/schema.json",
   "metadata": {
-    "type": "Report",
-    "displayName": "CloudRLS v3",
+    "type": "SemanticModel",
+    "displayName": "FamilyBM2M v3ffff",
     "sensitivityLabelId": "00000000-0000-0000-0000-000000000000"
   },
   "config": {
     "version": "2.1",
-    "logicalId": "877f5958-58ca-b2b3-4a81-bb1ca82ce96c"
+    "logicalId": "1d124227-9299-b05e-4124-c19d7fee795e"
   }
 }

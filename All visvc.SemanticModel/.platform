@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.1.0/schema.json",
   "metadata": {
     "type": "SemanticModel",
-    "displayName": "CloudRLS v3",
+    "displayName": "All visvc",
     "sensitivityLabelId": "00000000-0000-0000-0000-000000000000"
   },
   "config": {
     "version": "2.1",
-    "logicalId": "035ed000-4162-af61-4733-55b6053a7deb"
+    "logicalId": "59fffe68-36fa-888e-4148-8a0dbb1a826f"
   }
 }
