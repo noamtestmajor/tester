@@ -1,0 +1,34 @@
+table Table1NoParams
+
+	column asasasas
+		dataType: string
+		summarizeBy: none
+		sourceColumn: asasasas
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+		annotation DataTypeAtRefresh = String#####not a type
+
+		annotation PBI_NameAtRefresh = asasasas
+
+		annotation PBI_WasHiddenAtRefresh = False
+
+	partition Table1NoParams-624d8931-c0bd-4393-bb5f-6bed2f9e6f1c = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("pbiotestdb.database.windows.net", "Refresh"),
+				    dbo_Table1 = Source{[Schema="dbo",Item="Table1"]}[Data]
+				in
+				    dbo_Table1
+
+	annotation PBI_Id = 3f01ec00-696a-4c8d-9865-2bf13181fc41
+
+	annotation LinkedQueryName = Table1NoParams
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+
