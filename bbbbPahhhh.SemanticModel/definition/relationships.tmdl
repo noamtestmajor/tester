@@ -1,5 +1,0 @@
-relationship 5320f873-fb34-46ef-9610-94df46fe2393
-	joinOnDateBehavior: datePartOnly
-	fromColumn: DateTimeZoneParam.DateTimeZoneParam
-	toColumn: LocalDateTable_88018f0e-b9a3-44b1-89a2-45c76066aa00.Date
-
