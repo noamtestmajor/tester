@@ -1,12 +1,12 @@
 table members
 	lineageTag: 5db7665f-3162-4df5-a00b-7d5afbf174b8
 
-	column Idkkkkk
+	column Izzzzz
 		dataType: int64
 		formatString: 0
 		lineageTag: b881f5d9-9fcc-48b9-92a9-abf049455f0a
 		summarizeBy: count
-		sourceColumn: Idkkkkk
+		sourceColumn: Izzzzz
 
 		annotation SummarizationSetBy = Automatic
 
@@ -32,9 +32,10 @@ table members
 				let
 				    Source = Sql.Database("pbiotestdb.database.windows.net", "irTestB"),
 				    dbo_members = Source{[Schema="dbo",Item="members"]}[Data],
-				  #"Renamed Columns" = Table.RenameColumns(dbo_members, {{"Id", "Idkkkkk"}})
+				  #"Renamed Columns" = Table.RenameColumns(dbo_members, {{"Id", "Idkkkkk"}}),
+				  #"Renamed Columns 1" = Table.RenameColumns(#"Renamed Columns", {{"Idkkkkk", "Izzzzz"}})
 				in
-				    #"Renamed Columns"
+				    #"Renamed Columns 1"
 
 	annotation PBI_ResultType = Table
 

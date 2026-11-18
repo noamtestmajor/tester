@@ -43,7 +43,8 @@
     "useStylableVisualContainerHeader": true,
     "exportDataMode": "AllowSummarized",
     "defaultDrillFilterOtherVisuals": true,
-    "allowChangeFilterTypes": true
+    "allowChangeFilterTypes": true,
+    "useEnhancedTooltips": true
   },
   "linguisticSchemaSyncVersion": 2
 }

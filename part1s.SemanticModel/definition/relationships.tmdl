@@ -2,7 +2,7 @@ relationship 68eb531f-f7d3-4e97-a21f-c4981e0d0b2c
 	isActive: false
 	crossFilteringBehavior: bothDirections
 	fromCardinality: one
-	fromColumn: members.Idkkkkk
+	fromColumn: members.Izzzzz
 	toColumn: family.Id
 
 relationship 67133caf-6cdb-435c-82a8-d5d95b46726c

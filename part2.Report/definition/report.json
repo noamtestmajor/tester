@@ -35,5 +35,8 @@
       ]
     }
   ],
+  "settings": {
+    "useEnhancedTooltips": true
+  },
   "linguisticSchemaSyncVersion": 0
 }
