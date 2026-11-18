@@ -1,19 +1,15 @@
 table DurationParam
+	lineageTag: 6262fd87-fbe1-4874-ba18-7dd54c51c9b2
 
 	column DurationParam
 		dataType: double
+		lineageTag: ed16238a-0087-43f7-b3b4-a84a2985959d
 		summarizeBy: sum
 		sourceColumn: DurationParam
 
 		annotation SummarizationSetBy = Automatic
 
-		annotation Format = <Format Format="General" />
-
-		annotation DataTypeAtRefresh = Double#####not a type
-
-		annotation PBI_NameAtRefresh = DurationParam
-
-		annotation PBI_WasHiddenAtRefresh = False
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	partition DurationParam-dc826333-3f31-46e7-bf86-34e6df3a31be = m
 		mode: import

@@ -8,9 +8,9 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBIDesktopVersion = 2.80.5803.421 (20.04)
-
 annotation PBI_QueryOrder = Table1NoParams.RefreshConnections_V0.ServerName.MaxId.BinParam.AnyParam.DateParam.StrParam.BoolParam.DurationParam.DaxParam.DateTimeZoneParam.DbParam
+
+annotation PBI_ProTooling = ["WebModelingEdit"]
 
 ref table DateTableTemplate_a19a89be-af15-4da0-b678-b32af658ca6a
 ref table Table1NoParams

@@ -8,9 +8,9 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBIDesktopVersion = 2.106.883.0 (22.06)
-
 annotation PBI_QueryOrder = ["family","members"]
+
+annotation PBI_ProTooling = ["WebModelingEdit"]
 
 ref table family
 ref table DateTableTemplate_0a712767-9f80-4432-b875-728ff463aea8

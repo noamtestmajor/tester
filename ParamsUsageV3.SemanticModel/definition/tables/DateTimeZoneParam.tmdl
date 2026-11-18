@@ -1,8 +1,10 @@
 table DateTimeZoneParam
+	lineageTag: b67cefd1-0544-42b8-811f-a28f083fcfb7
 
 	column DateTimeZoneParam
 		dataType: dateTime
 		formatString: General Date
+		lineageTag: 51d6a3cc-e552-4d11-a001-ad77725ed16f
 		summarizeBy: none
 		sourceColumn: DateTimeZoneParam
 
@@ -12,14 +14,6 @@ table DateTimeZoneParam
 			defaultHierarchy: LocalDateTable_88018f0e-b9a3-44b1-89a2-45c76066aa00.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
-
-		annotation Format = <Format Format="DateTimeGeneralPattern"><DateTimes><DateTime LCID="1033" Group="GeneralDateTimeLong" FormatString="G" /></DateTimes></Format>
-
-		annotation DataTypeAtRefresh = DateTime#####not a type
-
-		annotation PBI_NameAtRefresh = DateTimeZoneParam
-
-		annotation PBI_WasHiddenAtRefresh = False
 
 	partition DateTimeZoneParam-c3f26d5e-6bbd-4952-bab9-3c34f10885b6 = m
 		mode: import

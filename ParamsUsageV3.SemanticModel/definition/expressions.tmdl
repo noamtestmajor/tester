@@ -1,47 +1,55 @@
 /// My Server
 expression ServerName = "pbiotestdb.database.windows.net" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 0bfaff71-b9db-4850-9cbd-3b553d5698ad
 
 	annotation PBI_NavigationStepName = Navigation
 
 	annotation PBI_ResultType = Text
 
 expression MaxId = 10000 meta [IsParameterQuery=true, Type="Number", IsParameterQueryRequired=true]
+	lineageTag: 2d3b93b6-e26a-4d51-a755-e06e769b8e39
 
 	annotation PBI_NavigationStepName = Navigation
 
 	annotation PBI_ResultType = Number
 
 expression BinParam = "ggt%423$$57%dfdfcdfhdh" meta [IsParameterQuery=true, Type="Binary", IsParameterQueryRequired=true]
+	lineageTag: 375f505a-35b2-44c2-8370-ae95b1faf659
 
 	annotation PBI_NavigationStepName = Navigation
 
 	annotation PBI_ResultType = Text
 
 expression AnyParam = "uu63" meta [IsParameterQuery=true, Type="Any", IsParameterQueryRequired=true]
+	lineageTag: 837acfd0-56f1-4b69-8b26-566e94ba5535
 
 	annotation PBI_NavigationStepName = Navigation
 
 	annotation PBI_ResultType = Text
 
 expression DateParam = #datetime(2002, 2, 8, 0, 0, 0) meta [IsParameterQuery=true, List={#datetime(2000, 1, 1, 0, 0, 0), #datetime(2002, 2, 8, 0, 0, 0), #datetime(2003, 12, 8, 0, 0, 0), #datetime(2007, 7, 9, 0, 0, 0)}, DefaultValue=#datetime(2000, 1, 1, 0, 0, 0), Type="DateTime", IsParameterQueryRequired=true]
+	lineageTag: 6f42f36f-536f-4e0a-a966-3e8b8175f2e2
 
 	annotation PBI_NavigationStepName = Navigation
 
 	annotation PBI_ResultType = DateTime
 
 expression StrParam = "Hello" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=false]
+	lineageTag: 20811509-602c-4f1f-9bb3-76c78e5469da
 
 	annotation PBI_NavigationStepName = Navigation
 
 	annotation PBI_ResultType = Text
 
 expression BoolParam = true meta [IsParameterQuery=true, List={true, false}, DefaultValue=true, Type="Logical", IsParameterQueryRequired=true]
+	lineageTag: 6bf6f958-c670-4dba-9113-e3b57dbec4ea
 
 	annotation PBI_NavigationStepName = Navigation
 
 	annotation PBI_ResultType = Logical
 
 expression DbParam = "Refresh" meta [IsParameterQuery=true, List={"Refresh", "test"}, DefaultValue="Refresh", Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 6b12f060-803a-498c-9e85-7c09e3529ab7
 
 	annotation PBI_ResultType = Text
 

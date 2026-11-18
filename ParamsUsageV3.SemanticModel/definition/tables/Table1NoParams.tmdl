@@ -1,19 +1,15 @@
 table Table1NoParams
+	lineageTag: aaaab12e-d272-485f-9e0b-9b25a475bd7c
 
 	column asasasas
 		dataType: string
+		lineageTag: ded79d85-1db4-4c17-96e3-4b1a5c59cd2b
 		summarizeBy: none
 		sourceColumn: asasasas
 
 		annotation SummarizationSetBy = Automatic
 
-		annotation Format = <Format Format="Text" />
-
-		annotation DataTypeAtRefresh = String#####not a type
-
-		annotation PBI_NameAtRefresh = asasasas
-
-		annotation PBI_WasHiddenAtRefresh = False
+		annotation PBI_FormatHint = {"isText":true}
 
 	partition Table1NoParams-624d8931-c0bd-4393-bb5f-6bed2f9e6f1c = m
 		mode: import

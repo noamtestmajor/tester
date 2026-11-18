@@ -1,9 +1,11 @@
 table DateTableTemplate_a19a89be-af15-4da0-b678-b32af658ca6a
 	isHidden
 	isPrivate
+	lineageTag: 11552d8d-962f-4306-996e-51ffc3b83b47
 
 	column Date
 		isHidden
+		lineageTag: f55ed5b7-0095-4e54-b154-7a7e15629cae
 		dataCategory: PaddedDateTableDates
 		summarizeBy: none
 		isNameInferred
@@ -11,12 +13,9 @@ table DateTableTemplate_a19a89be-af15-4da0-b678-b32af658ca6a
 
 		annotation SummarizationSetBy = User
 
-		annotation Format = <Format Format="DateTimeGeneralPattern"><DateTimes><DateTime LCID="1033" Group="GeneralDateTimeLong" FormatString="G" /></DateTimes></Format>
-
-		annotation DataTypeAtRefresh = DateTime#####not a type
-
 	column Year = YEAR([Date])
 		isHidden
+		lineageTag: bb7fb627-e146-44b2-924c-7b6af6caee7a
 		dataCategory: Years
 		summarizeBy: none
 
@@ -24,12 +23,9 @@ table DateTableTemplate_a19a89be-af15-4da0-b678-b32af658ca6a
 
 		annotation TemplateId = Year
 
-		annotation Format = <Format Format="NumberWhole" Accuracy="0" />
-
-		annotation DataTypeAtRefresh = Int64#####not a type
-
 	column MonthNo = MONTH([Date])
 		isHidden
+		lineageTag: 8ce0e331-552c-4bfc-8360-f9c7ee9d33c2
 		dataCategory: MonthOfYear
 		summarizeBy: none
 
@@ -37,12 +33,9 @@ table DateTableTemplate_a19a89be-af15-4da0-b678-b32af658ca6a
 
 		annotation TemplateId = MonthNumber
 
-		annotation Format = <Format Format="NumberWhole" Accuracy="0" />
-
-		annotation DataTypeAtRefresh = Int64#####not a type
-
 	column Month = FORMAT([Date], "MMMM")
 		isHidden
+		lineageTag: 2425192a-8021-4488-9057-42461b968d95
 		dataCategory: Months
 		summarizeBy: none
 		sortByColumn: MonthNo
@@ -51,12 +44,11 @@ table DateTableTemplate_a19a89be-af15-4da0-b678-b32af658ca6a
 
 		annotation TemplateId = Month
 
-		annotation Format = <Format Format="Text" />
-
-		annotation DataTypeAtRefresh = String#####not a type
+		annotation PBI_FormatHint = {"isText":true}
 
 	column QuarterNo = INT(([MonthNo] + 2) / 3)
 		isHidden
+		lineageTag: dae62583-695d-4a8b-8e9f-266d8dccc3d8
 		dataCategory: QuarterOfYear
 		summarizeBy: none
 
@@ -64,12 +56,9 @@ table DateTableTemplate_a19a89be-af15-4da0-b678-b32af658ca6a
 
 		annotation TemplateId = QuarterNumber
 
-		annotation Format = <Format Format="NumberWhole" Accuracy="0" />
-
-		annotation DataTypeAtRefresh = Int64#####not a type
-
 	column Quarter = "Qtr " & [QuarterNo]
 		isHidden
+		lineageTag: 7ae4040a-10c0-4bbb-81ea-487bfb446af0
 		dataCategory: Quarters
 		summarizeBy: none
 		sortByColumn: QuarterNo
@@ -78,12 +67,11 @@ table DateTableTemplate_a19a89be-af15-4da0-b678-b32af658ca6a
 
 		annotation TemplateId = Quarter
 
-		annotation Format = <Format Format="Text" />
-
-		annotation DataTypeAtRefresh = String#####not a type
+		annotation PBI_FormatHint = {"isText":true}
 
 	column Day = DAY([Date])
 		isHidden
+		lineageTag: 6174824d-2d03-43e1-9762-919ddf7b21e0
 		dataCategory: DayOfMonth
 		summarizeBy: none
 
@@ -91,22 +79,23 @@ table DateTableTemplate_a19a89be-af15-4da0-b678-b32af658ca6a
 
 		annotation TemplateId = Day
 
-		annotation Format = <Format Format="NumberWhole" Accuracy="0" />
-
-		annotation DataTypeAtRefresh = Int64#####not a type
-
 	hierarchy 'Date Hierarchy'
+		lineageTag: b65af3b9-bb1c-462f-b570-3d0cacee06f4
 
 		level Year
+			lineageTag: 2e84437f-b2d9-4e60-b4ee-90cb2e6dd8c2
 			column: Year
 
 		level Quarter
+			lineageTag: 5697af22-c158-4c76-8952-e378f59b8540
 			column: Quarter
 
 		level Month
+			lineageTag: 6117169a-1da5-498d-903d-69f2a3b9c23b
 			column: Month
 
 		level Day
+			lineageTag: 84672ca7-e4ff-44ba-b44d-5d9a553e2fcf
 			column: Day
 
 		annotation TemplateId = DateHierarchy

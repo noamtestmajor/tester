@@ -1,159 +1,100 @@
 table RefreshConnections_V0
+	lineageTag: 0b838db7-8694-4f25-a6d2-c832deabd3b4
 
 	column Id
 		dataType: int64
 		formatString: 0
+		lineageTag: f9097ca4-dabd-449c-8217-7c56a0fbeb6d
 		summarizeBy: count
 		sourceColumn: Id
 
 		annotation SummarizationSetBy = Automatic
 
-		annotation Format = <Format Format="NumberWhole" Accuracy="0" />
-
-		annotation DataTypeAtRefresh = Int64#####not a type
-
-		annotation PBI_NameAtRefresh = Id
-
-		annotation PBI_WasHiddenAtRefresh = False
-
 	column Name
 		dataType: string
+		lineageTag: cd106f60-3bcb-452c-a732-37786baa5e54
 		summarizeBy: none
 		sourceColumn: Name
 
 		annotation SummarizationSetBy = Automatic
 
-		annotation Format = <Format Format="Text" />
-
-		annotation DataTypeAtRefresh = String#####not a type
-
-		annotation PBI_NameAtRefresh = Name
-
-		annotation PBI_WasHiddenAtRefresh = False
+		annotation PBI_FormatHint = {"isText":true}
 
 	column OriginalConnectionString
 		dataType: string
+		lineageTag: 58bbdaab-61ba-49fe-80b2-10824205b57e
 		summarizeBy: none
 		sourceColumn: OriginalConnectionString
 
 		annotation SummarizationSetBy = Automatic
 
-		annotation Format = <Format Format="Text" />
-
-		annotation DataTypeAtRefresh = String#####not a type
-
-		annotation PBI_NameAtRefresh = OriginalConnectionString
-
-		annotation PBI_WasHiddenAtRefresh = False
+		annotation PBI_FormatHint = {"isText":true}
 
 	column ConnectionString
 		dataType: string
+		lineageTag: 68224da9-518f-4109-9998-8ff4ae38d3a1
 		summarizeBy: none
 		sourceColumn: ConnectionString
 
 		annotation SummarizationSetBy = Automatic
 
-		annotation Format = <Format Format="Text" />
-
-		annotation DataTypeAtRefresh = String#####not a type
-
-		annotation PBI_NameAtRefresh = ConnectionString
-
-		annotation PBI_WasHiddenAtRefresh = False
+		annotation PBI_FormatHint = {"isText":true}
 
 	column Provider
 		dataType: string
+		lineageTag: 941d492d-0080-436b-98a8-cc1b5069e49f
 		summarizeBy: none
 		sourceColumn: Provider
 
 		annotation SummarizationSetBy = Automatic
 
-		annotation Format = <Format Format="Text" />
+		annotation PBI_FormatHint = {"isText":true}
 
-		annotation DataTypeAtRefresh = String#####not a type
-
-		annotation PBI_NameAtRefresh = Provider
-
-		annotation PBI_WasHiddenAtRefresh = False
-
-	column DMGatewayType
+	column DMGatewayTypexxxxx
 		dataType: int64
 		formatString: 0
+		lineageTag: 851683fe-50a7-4a0e-9c46-960da4908098
 		summarizeBy: sum
-		sourceColumn: DMGatewayType
+		sourceColumn: DMGatewayTypexxxxx
 
 		annotation SummarizationSetBy = Automatic
-
-		annotation Format = <Format Format="NumberWhole" Accuracy="0" />
-
-		annotation DataTypeAtRefresh = Int64#####not a type
-
-		annotation PBI_NameAtRefresh = DMGatewayType
-
-		annotation PBI_WasHiddenAtRefresh = False
 
 	column OnPremGatewayRequired
 		dataType: boolean
 		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 2d72ccaa-219a-461f-805c-66e1d6bcbcac
 		summarizeBy: none
 		sourceColumn: OnPremGatewayRequired
 
 		annotation SummarizationSetBy = Automatic
 
-		annotation Format = <Format Format="Boolean" />
-
-		annotation DataTypeAtRefresh = Boolean#####not a type
-
-		annotation PBI_NameAtRefresh = OnPremGatewayRequired
-
-		annotation PBI_WasHiddenAtRefresh = False
-
 	column IsDMValidated
 		dataType: boolean
 		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: ac99bf46-b9e6-49e7-b749-21766e3ed79d
 		summarizeBy: none
 		sourceColumn: IsDMValidated
 
 		annotation SummarizationSetBy = Automatic
 
-		annotation Format = <Format Format="Boolean" />
-
-		annotation DataTypeAtRefresh = Boolean#####not a type
-
-		annotation PBI_NameAtRefresh = IsDMValidated
-
-		annotation PBI_WasHiddenAtRefresh = False
-
 	column Model_Id
 		dataType: int64
 		formatString: 0
+		lineageTag: 7d9495f0-9e82-496b-a5db-fbd17e484f0e
 		summarizeBy: count
 		sourceColumn: Model_Id
 
 		annotation SummarizationSetBy = Automatic
 
-		annotation Format = <Format Format="NumberWhole" Accuracy="0" />
-
-		annotation DataTypeAtRefresh = Int64#####not a type
-
-		annotation PBI_NameAtRefresh = Model_Id
-
-		annotation PBI_WasHiddenAtRefresh = False
-
 	column DMMoniker
 		dataType: string
+		lineageTag: cca46f22-b68e-4ca2-8c87-820e121082bb
 		summarizeBy: none
 		sourceColumn: DMMoniker
 
 		annotation SummarizationSetBy = Automatic
 
-		annotation Format = <Format Format="Text" />
-
-		annotation DataTypeAtRefresh = String#####not a type
-
-		annotation PBI_NameAtRefresh = DMMoniker
-
-		annotation PBI_WasHiddenAtRefresh = False
+		annotation PBI_FormatHint = {"isText":true}
 
 	partition RefreshConnections_V0-dc268e63-a9d8-45e3-afc6-7d9b5992c1be = m
 		mode: import
@@ -163,9 +104,10 @@ table RefreshConnections_V0
 				    dbo_RefreshConnections_V0 = Source{[Schema="dbo",Item="RefreshConnections_V0"]}[Data],
 				    #"Filtered Rows" = Table.SelectRows(dbo_RefreshConnections_V0, each [ConnectionString] <> AnyParam),
 				    #"Filtered Rows1" = Table.SelectRows(#"Filtered Rows", each [OnPremGatewayRequired] = BoolParam),
-				    #"Filtered Rows2" = Table.SelectRows(#"Filtered Rows1", each [DMGatewayType] < MaxId)
+				    #"Filtered Rows2" = Table.SelectRows(#"Filtered Rows1", each [DMGatewayType] < MaxId),
+				  #"Renamed Columns" = Table.RenameColumns(#"Filtered Rows2", {{"DMGatewayType", "DMGatewayTypexxxxx"}})
 				in
-				    #"Filtered Rows2"
+				    #"Renamed Columns"
 
 	annotation PBI_Id = c11d9409-30ec-481a-92fe-783703dbd7ed
 

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.15.0/schema.json",
+  "name": "079dc17fa0a43bcc0d59",
+  "position": {
+    "x": 1127,
+    "y": 348,
+    "z": 4003,
+    "height": 345,
+    "width": 153,
+    "tabOrder": 3
+  },
+  "visual": {
+    "visualType": "hundredPercentStackedAreaChart"
+  }
+}
