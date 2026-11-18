@@ -1,0 +1,5 @@
+role 'adding new role'
+	modelPermission: read
+
+	annotation PBI_Id = 1842c4ae67344bafb3f06d50742b62a9
+

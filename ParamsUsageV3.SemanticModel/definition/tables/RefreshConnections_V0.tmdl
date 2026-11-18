@@ -1,0 +1,175 @@
+table RefreshConnections_V0
+
+	column Id
+		dataType: int64
+		formatString: 0
+		summarizeBy: count
+		sourceColumn: Id
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="NumberWhole" Accuracy="0" />
+
+		annotation DataTypeAtRefresh = Int64#####not a type
+
+		annotation PBI_NameAtRefresh = Id
+
+		annotation PBI_WasHiddenAtRefresh = False
+
+	column Name
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Name
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+		annotation DataTypeAtRefresh = String#####not a type
+
+		annotation PBI_NameAtRefresh = Name
+
+		annotation PBI_WasHiddenAtRefresh = False
+
+	column OriginalConnectionString
+		dataType: string
+		summarizeBy: none
+		sourceColumn: OriginalConnectionString
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+		annotation DataTypeAtRefresh = String#####not a type
+
+		annotation PBI_NameAtRefresh = OriginalConnectionString
+
+		annotation PBI_WasHiddenAtRefresh = False
+
+	column ConnectionString
+		dataType: string
+		summarizeBy: none
+		sourceColumn: ConnectionString
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+		annotation DataTypeAtRefresh = String#####not a type
+
+		annotation PBI_NameAtRefresh = ConnectionString
+
+		annotation PBI_WasHiddenAtRefresh = False
+
+	column Provider
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Provider
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+		annotation DataTypeAtRefresh = String#####not a type
+
+		annotation PBI_NameAtRefresh = Provider
+
+		annotation PBI_WasHiddenAtRefresh = False
+
+	column DMGatewayType
+		dataType: int64
+		formatString: 0
+		summarizeBy: sum
+		sourceColumn: DMGatewayType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="NumberWhole" Accuracy="0" />
+
+		annotation DataTypeAtRefresh = Int64#####not a type
+
+		annotation PBI_NameAtRefresh = DMGatewayType
+
+		annotation PBI_WasHiddenAtRefresh = False
+
+	column OnPremGatewayRequired
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		summarizeBy: none
+		sourceColumn: OnPremGatewayRequired
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Boolean" />
+
+		annotation DataTypeAtRefresh = Boolean#####not a type
+
+		annotation PBI_NameAtRefresh = OnPremGatewayRequired
+
+		annotation PBI_WasHiddenAtRefresh = False
+
+	column IsDMValidated
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		summarizeBy: none
+		sourceColumn: IsDMValidated
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Boolean" />
+
+		annotation DataTypeAtRefresh = Boolean#####not a type
+
+		annotation PBI_NameAtRefresh = IsDMValidated
+
+		annotation PBI_WasHiddenAtRefresh = False
+
+	column Model_Id
+		dataType: int64
+		formatString: 0
+		summarizeBy: count
+		sourceColumn: Model_Id
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="NumberWhole" Accuracy="0" />
+
+		annotation DataTypeAtRefresh = Int64#####not a type
+
+		annotation PBI_NameAtRefresh = Model_Id
+
+		annotation PBI_WasHiddenAtRefresh = False
+
+	column DMMoniker
+		dataType: string
+		summarizeBy: none
+		sourceColumn: DMMoniker
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation Format = <Format Format="Text" />
+
+		annotation DataTypeAtRefresh = String#####not a type
+
+		annotation PBI_NameAtRefresh = DMMoniker
+
+		annotation PBI_WasHiddenAtRefresh = False
+
+	partition RefreshConnections_V0-dc268e63-a9d8-45e3-afc6-7d9b5992c1be = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database(ServerName, "Refresh"),
+				    dbo_RefreshConnections_V0 = Source{[Schema="dbo",Item="RefreshConnections_V0"]}[Data],
+				    #"Filtered Rows" = Table.SelectRows(dbo_RefreshConnections_V0, each [ConnectionString] <> AnyParam),
+				    #"Filtered Rows1" = Table.SelectRows(#"Filtered Rows", each [OnPremGatewayRequired] = BoolParam),
+				    #"Filtered Rows2" = Table.SelectRows(#"Filtered Rows1", each [DMGatewayType] < MaxId)
+				in
+				    #"Filtered Rows2"
+
+	annotation PBI_Id = c11d9409-30ec-481a-92fe-783703dbd7ed
+
+	annotation LinkedQueryName = RefreshConnections_V0
+
+	annotation PBI_ResultType = Table
+

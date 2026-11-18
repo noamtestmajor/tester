@@ -1,0 +1,39 @@
+table members
+	lineageTag: 5db7665f-3162-4df5-a00b-7d5afbf174b8
+
+	column Id
+		dataType: int64
+		formatString: 0
+		lineageTag: b881f5d9-9fcc-48b9-92a9-abf049455f0a
+		summarizeBy: count
+		sourceColumn: Id
+
+		annotation SummarizationSetBy = Automatic
+
+	column Name
+		dataType: string
+		lineageTag: c5bd28fe-81cc-47ad-9d5a-77861065d254
+		summarizeBy: none
+		sourceColumn: Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Family
+		dataType: string
+		lineageTag: bc589dbd-3c5a-4a77-9730-88acad5d2c4a
+		summarizeBy: none
+		sourceColumn: Family
+
+		annotation SummarizationSetBy = Automatic
+
+	partition members-8a99ea91-a3ba-4191-8ea0-eea3685c157f = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("pbiotestdb.database.windows.net", "irTestB"),
+				    dbo_members = Source{[Schema="dbo",Item="members"]}[Data]
+				in
+				    dbo_members
+
+	annotation PBI_ResultType = Table
+

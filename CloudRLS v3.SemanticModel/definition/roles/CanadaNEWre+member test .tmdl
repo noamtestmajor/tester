@@ -1,0 +1,7 @@
+role 'CanadaNEWre+member test '
+	modelPermission: read
+
+	tablePermission DimGeography = [EnglishCountryRegionName]="Canada"
+
+	annotation PBI_Id = 43e70c0411d945b38f5146b833a82dbc
+

@@ -1,0 +1,5 @@
+role DynamicNEW
+	modelPermission: read
+
+	annotation PBI_Id = a4141a91a0c54fa88e12cb5e6221019a
+
