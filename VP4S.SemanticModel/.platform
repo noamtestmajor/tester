@@ -2,10 +2,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
   "metadata": {
     "type": "SemanticModel",
-    "displayName": "All visual types v3"
+    "displayName": "VP4S"
   },
   "config": {
     "version": "2.0",
-    "logicalId": "4e6111f7-67d0-b1c1-42f7-3156b3d94a31"
+    "logicalId": "a218439d-4e7c-a33e-46ab-95b143875ec0"
   }
 }

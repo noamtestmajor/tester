@@ -2,10 +2,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
   "metadata": {
     "type": "Report",
-    "displayName": "All visual types v3"
+    "displayName": "VP3"
   },
   "config": {
     "version": "2.0",
-    "logicalId": "9432113a-9e2b-a1ee-4775-09c1d83c5d21"
+    "logicalId": "c0b9f14e-19f5-ad99-48a0-b33d085767da"
   }
 }
